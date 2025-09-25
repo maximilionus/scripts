@@ -19,9 +19,8 @@ cd "$1"
 
 echo "Converting..."
 find -type f -name '*.flac' \
-    -exec ffmpeg -i "{}" -ab "$MP3_BITRATE" \
-        -map_metadata 0 -id3v2_version 3 "{}.mp3" \
-        -hide_banner -loglevel warning \;
+    -exec ffmpeg -i "{}" -hide_banner -loglevel warning \
+        -ab "$MP3_BITRATE" -map_metadata 0 -id3v2_version 3 "{}.mp3" \;
 
 echo "Backing up the original files..."
 mkdir "$BACKUP_DIR"
