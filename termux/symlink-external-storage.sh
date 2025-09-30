@@ -2,7 +2,7 @@
 
 set -e
 
-STORAGE="~/storage"
+STORAGE="$HOME/storage"
 EXTERNAL_PRIVATE="$STORAGE/external-1"
 EXTERNAL_ROOT="$STORAGE/external-1-root"
 
