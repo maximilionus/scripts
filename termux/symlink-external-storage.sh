@@ -7,7 +7,7 @@ EXTERNAL_PRIVATE="$STORAGE/external-1"
 EXTERNAL_ROOT="$STORAGE/external-1-root"
 
 if [[ ! -d $STORAGE ]]; then
-    echo "Storage directory non-existent. Run 'termux-storage-setup' first."
+    echo "Storage directory non-existent. Run 'termux-setup-storage' first."
     exit 1
 fi
 
