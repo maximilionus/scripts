@@ -7,6 +7,7 @@
 #   test use of that color on all nine background 
 #   colors (default + 8 escapes).
 #
+# Original: https://tldp.org/HOWTO/Bash-Prompt-HOWTO/x329.html
 
 T='gYw'   # The test text
 
